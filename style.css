@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+}
+
+
+
+#keys {
+    filter: blur(10px);
+    margin: -10px;
+}
+
+.title-blurb {
+    position: relative;
+}
+
+.center-text {
+    font-family: 'Tangerine', cursive;
+    font-size: 4.5em;
+    color: white;
+    text-shadow: 3px 2px rgb(32, 13, 13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.body-content img {
+    width: 350px;
+    border-radius: 400px;
+    image-resolution: 50dpi;
+}
+
+.body-content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .title-blurb + .body-content {
+    padding-top: 102px;
+  }
+
+#end-quote {
+    padding: 30px;
+    text-align: center;
+}
